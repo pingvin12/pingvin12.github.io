@@ -8,7 +8,7 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/install-packages:
+      - run:
           command: npm install
           name: Install dependencies
       - run:
@@ -44,3 +44,8 @@ jobs:
             else
               echo "Not master branch, dry run only"
             fi
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - build_and_deploy
