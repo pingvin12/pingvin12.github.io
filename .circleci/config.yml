@@ -12,6 +12,9 @@ jobs:
           command: npm install
           name: Install dependencies
       - run:
+          command: npm i -g next
+          name: Install nextjs
+      - run:
           command: next build
           name: Build with nextjs
       - run:
