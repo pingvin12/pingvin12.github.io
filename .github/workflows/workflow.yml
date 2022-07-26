@@ -23,6 +23,7 @@ jobs:
       - name: Build
         run: |
           npm i
+          npm i next react react-dom
           next build
           next export
 
