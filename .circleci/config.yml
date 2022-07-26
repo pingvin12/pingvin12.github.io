@@ -15,7 +15,7 @@ jobs:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
           name: Install Dependencies
-          command: npm install
+          command: npm i
       - run:
           name: Install next.js
           command: npm install next react react-dom
@@ -25,10 +25,10 @@ jobs:
             - ./node_modules
       - run:
           name: Build with next.js
-          command: next build
+          command: npx next build
       - run:
           name: Export with next.js
-          command: next export
+          command: npx next export
       - deploy:
           name: Deploy Release to GitHub
           command: |
