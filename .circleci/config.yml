@@ -16,6 +16,9 @@ jobs:
       - run:
           name: Install Dependencies
           command: npm install
+      - run:
+          name: Install next.js
+          command: npm install next react react-dom
       - save_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
           paths:
