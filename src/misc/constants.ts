@@ -48,11 +48,19 @@ export const skills = [
         image: "/sql.png",
     },
 ]
+export const tools = [
+    {
+        title: "Genalg",
+        desc: "A Genetic algorithm solution made with python.",
+        banner: "/genalg.png",
+        git: "https://github.com/pingvin12/Genalg",
+    }
+]
 export const projects = [
     {
         title: "UNDERCOVER",
         desc: "An FPS made in Unity3D.",
-        banner: "/ucbanner.png",
+        banner: "/undercover.png",
         git: "https://github.com/pingvin12/UnderCover",
     },
     {
@@ -66,11 +74,5 @@ export const projects = [
         desc: "Frontend part of 3DViewr made using the tauri frontend framework.",
         banner: "none",
         git: "https://github.com/pingvin12/3DViewr-Frontend",
-    },
-    {
-        title: "Genalg",
-        desc: "A Genetic algorithm solution made with python.",
-        banner: "/genalg.png",
-        git: "https://github.com/pingvin12/Genalg",
     },
 ]

@@ -1,13 +1,13 @@
 import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
-import { projects } from "../misc/constants";
+import { tools } from "../misc/constants";
 
 
-const Projects: FC = () => {
+const Tools: FC = () => {
     return (
         <>
-            <h1 className="text-center text-4xl mb-10 md:mb-20">Projects</h1>
-            {projects.map((item, index) => (
+            <h1 className="text-center text-4xl mb-10 md:mb-20">Tools or Algorithms</h1>
+            {tools.map((item, index) => (
                 <div
                     key={ item.title }
                     className={`item flex gap-[20px] lg:gap-[50px] w-full px-[5vw] md:min-h-[60vh] mb-20 md:my-10 ${
@@ -53,4 +53,4 @@ const Projects: FC = () => {
     );
 };
 
-export default Projects;
+export default Tools;

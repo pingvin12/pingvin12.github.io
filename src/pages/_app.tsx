@@ -15,24 +15,24 @@ function MyApp({ Component, pageProps }: AppProps) {
                     type="image/x-icon"
                 />
 
-                <title>{`NAPTheDev's Portfolio`}</title>
+                <title>{`József Fényes's Portfolio`}</title>
 
-                <meta name="title" content="NAPTheDev's Portfolio" />
-                <meta name="description" content="Nguyen Anh Phong's Portfolio" />
+                <meta name="title" content="József Fényes's Portfolio" />
+                <meta name="description" content="József Fényes's Portfolio" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="NAPTheDev's Portfolio" />
+                <meta property="og:title" content="József Fényes's Portfolio" />
                 <meta
                     property="og:description"
-                    content="Nguyen Anh Phong's Portfolio"
+                    content="József Fényes's Portfolio"
                 />
                 <meta property="og:image" content="/avatar.jpg" />
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="NAPTheDev's Portfolio" />
+                <meta property="twitter:title" content="József Fényes's Portfolio" />
                 <meta
                     property="twitter:description"
-                    content="Nguyen Anh Phong's Portfolio"
+                    content="József Fényes's Portfolio"
                 />
                 <meta property="twitter:image" content="/avatar.jpg" />
             </Head>

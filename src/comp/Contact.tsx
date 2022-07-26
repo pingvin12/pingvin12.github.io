@@ -5,7 +5,7 @@ const Contact: FC = () => {
     return (
         <div className="pb-20">
             <h1 className="text-center text-4xl mt-14 md:mt-28 mb-10">
-                Get in touch
+                Contact
             </h1>
             <div
                 data-scroll
@@ -24,7 +24,6 @@ const Contact: FC = () => {
                                 type="text"
                                 id="name"
                                 name="name"
-                                placeholder="John Doe"
                                 required
                                 minLength={3}
                             />
@@ -33,7 +32,6 @@ const Contact: FC = () => {
                                 type="email"
                                 id="email"
                                 name="email"
-                                placeholder="johndoe@gmail.com"
                                 required
                             />
                             <label htmlFor="subject">Subject</label>
@@ -41,7 +39,6 @@ const Contact: FC = () => {
                                 type="text"
                                 id="subject"
                                 name="subject"
-                                placeholder="I want to talk to you"
                                 required
                             />
                             <button className="mt-2 py-2 text-white rounded transition duration-300 flex justify-center items-center gap-[10px] bg-[#1876d2] hover:bg-[#2884e0]">
@@ -50,7 +47,6 @@ const Contact: FC = () => {
                         </form>
                     </div>
                     <div className="flex-1">
-                        <h1 className="text-xl mb-3">Other places</h1>
                         {social.map((item) => (
                             <a
                                 key={item.title}

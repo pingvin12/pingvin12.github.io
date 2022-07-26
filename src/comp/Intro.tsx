@@ -23,8 +23,6 @@ const Intro: FC = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.4, delay: 1.4 }}
                 className="absolute left-[calc(50%-23px)] bottom-[10vh] cursor-pointer"
-                href="#who"
-                data-scroll-to
             >
             </m.a>
         </div>
