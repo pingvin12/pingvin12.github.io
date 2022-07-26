@@ -1,42 +1,44 @@
 # Use the latest 2.1 version of CircleCI pipeline process engine.
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
-orbs:
-  node: circleci/node@5.0.2
 jobs:
-  build_and_deploy:
-    executor: node/default
+  build:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:10.16.3
     steps:
       - checkout
       - run:
+          name: Update NPM
+          command: "sudo npm install -g npm@5"
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install Dependencies
           command: npm install
-          name: Install dependencies
+      - save_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
       - run:
-          command: npm i -g next
-          name: Install nextjs
-      - run:
+          name: Build with next.js
           command: next build
-          name: Build with nextjs
       - run:
+          name: Export with next.js
           command: next export
-          name: Export
       - deploy:
-          name: Deploy as static page to github pages.
+          name: Deploy Release to GitHub
           command: |
-            if [ "${CIRCLE_BRANCH}" = "main"]; then
-              echo -e "Deploying to github pages...\n"
+             if [ "${CIRCLE_BRANCH}" = "main" ]; then
+              echo -e "Starting to deploy to Github Pages\n"
               cd ~/repo
-               git config --global user.email "builds@circleci.com"
+              git config --global user.email "builds@circleci.com"
               git config --global user.name "CircleCI"
+              #using token clone gh-pages branch
               git clone --quiet --branch=$CIRCLE_BRANCH https://${GH_TOKEN}@github.com/$TARGET_REPO built_website > /dev/null
-              echo "Installing rsync"
-              sudo apt-get -y install rsync
-              cd built_website
-              echo "rsync built code with checked out code..."
-              rsync -r --exclude=.git --delete ../$PELICAN_OUTPUT_FOLDER/ ./
-              echo "add files to git..."
-              git add -f .
-              echo "commit files to git repository..."
+              cd out
+              echo "adding files to git.."
+              git add -f
               if git commit -m "CircleCI build $CIRCLE_BUILD_NUM pushed to Github Pages" ; then
                 echo "git push files with force..."
                 git push -fq origin $BRANCH > /dev/null
@@ -44,11 +46,6 @@ jobs:
               else
                 echo "Content not changed, nothing to deploy"
               fi
-            else
-              echo "Not master branch, dry run only"
-            fi
-workflows:
-  version: 2
-  deploy:
-    jobs:
-      - build_and_deploy
+              else
+                echo "Not master branch, dry run only"
+              fi
