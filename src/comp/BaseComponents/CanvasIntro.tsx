@@ -1,28 +1,17 @@
 import React from "react";
-import ucbanner from '../../../public/undercover.png'
 import p5Types from "p5";
 import dynamic from 'next/dynamic'
 
-// Will only import `react-p5` on client-side
-const Sketch = dynamic(() => import('react-p5').then((mod: any) => mod.default), {
-    ssr: false,
-})
 
-interface ComponentProps {
+const Sketch = dynamic(
+    () => import("react-p5"),
+    { ssr: false }
+)
 
-}
+const CanvasIntro: React.FC = () => {
 
-let x = 50;
-const y = 50;
-
-
-const CanvasIntro: React.FC<ComponentProps> = (props: ComponentProps) => {
-
-    let max_distance;
-    //See annotations in JS for more information
     const setup = (p5: p5Types, canvasParentRef: Element) => {
         p5.createCanvas(window.innerWidth, 700, p5.WEBGL).parent(canvasParentRef);
-        max_distance = p5.dist(0, 0, window.innerWidth, 700);
     };
 
     const windowResized = (p5: p5Types) => {
