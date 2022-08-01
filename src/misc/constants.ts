@@ -56,6 +56,18 @@ export const tools = [
         git: "https://github.com/pingvin12/Genalg",
     }
 ]
+
+export const about =
+    [
+        {
+            name: "József Fényes",
+            desc: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem " +
+                "ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor " +
+                "sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum " +
+                "dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet ",
+            profpic: "/profpic.jpg"
+        }
+    ]
 export const projects = [
     {
         title: "UNDERCOVER",

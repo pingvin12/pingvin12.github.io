@@ -4,7 +4,7 @@ import { social } from "../misc/constants";
 const Contact: FC = () => {
     return (
         <div className="pb-20">
-            <h1 className="text-center text-4xl mt-14 md:mt-28 mb-10">
+            <h1 className="text-center text-4xl mt-14 md:mt-28 mb-10" id="contact">
                 Contact
             </h1>
             <div
@@ -41,7 +41,7 @@ const Contact: FC = () => {
                                 name="subject"
                                 required
                             />
-                            <button className="mt-2 py-2 text-white rounded transition duration-300 flex justify-center items-center gap-[10px] bg-[#1876d2] hover:bg-[#2884e0]">
+                            <button className="mt-2 py-2 rounded transition duration-300 flex justify-center items-center gap-[10px] bg-[#e9ebf0] hover:bg-[#d7d8db]">
                                 Send
                             </button>
                         </form>
@@ -53,10 +53,10 @@ const Contact: FC = () => {
                                 href={item.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex gap-3 items-center hover:bg-slate-900 p-2 transition duration-300"
+                                className="flex gap-3 items-center hover:bg-gray-400 p-2 transition duration-300 "
                             >
                                 <img
-                                    className="w-[30px] h-[30px] rounded-full"
+                                    className="w-[30px] h-[30px] rounded-full dark:invert"
                                     src={item.icon}
                                     alt=""
                                 />

@@ -5,18 +5,18 @@ import Skills from "../comp/Skills";
 import Contact from "../comp/Contact";
 import Tools from "../comp/Tools";
 import NavigationBar from "../comp/NavigationBar";
-import dark from "../misc/darkmode";
+import {useRef} from "react";
+import AboutMe from "../comp/AboutMe";
 function App() {
-    let d: dark = new dark()
-    d.auto()
-    d.dark_mode()
+    const skillsref = useRef();
   return (
       <div>
           <NavigationBar/>
-          <Intro />
-        <Skills />
+          <Intro scrollableref={skillsref} />
+        <Skills ref={skillsref} />
         <Projects />
           <Tools />
+          <AboutMe />
         <Contact />
       </div>
   );

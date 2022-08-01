@@ -6,7 +6,7 @@ import { tools } from "../misc/constants";
 const Tools: FC = () => {
     return (
         <>
-            <h1 className="text-center text-4xl mb-10 md:mb-20">Tools or Algorithms</h1>
+            <h1 className="text-center text-4xl mb-10 md:mb-20" id="tools">Tools or Algorithms</h1>
             {tools.map((item, index) => (
                 <div
                     key={ item.title }

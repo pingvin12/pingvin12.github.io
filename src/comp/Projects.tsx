@@ -6,7 +6,7 @@ import { projects } from "../misc/constants";
 const Projects: FC = () => {
     return (
         <>
-            <h1 className="text-center text-4xl mb-10 md:mb-20">Projects</h1>
+            <h1 className="text-center text-4xl mb-10 md:mb-20" id="projects">Projects</h1>
             {projects.map((item, index) => (
                 <div
                     key={ item.title }
@@ -20,7 +20,7 @@ const Projects: FC = () => {
                         <div className="border-[#888] border-2 rounded-[20px] overflow-hidden">
                             <div className="border-black border-[8px]">
                                 <img
-                                    className="w-full rounded-[12px]"
+                                    className="transition ease-in-out delay-150 w-full rounded-[5px] hover:scale-125 duration-300"
                                     src={item.banner}
                                     alt=""
                                 />
@@ -43,7 +43,7 @@ const Projects: FC = () => {
                                 className="h-[45px] px-[15px] text-white rounded transition duration-300 flex items-center gap-[10px] bg-[#1b222b] hover:bg-[#191e25]"
                             >
                                 <FaGithub size={25} />
-                                <span> View Github</span>
+                                <span> View on Github</span>
                             </a>
                         </div>
                     </div>
