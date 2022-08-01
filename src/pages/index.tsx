@@ -4,15 +4,13 @@ import Skills from "../comp/Skills";
 import Contact from "../comp/Contact";
 import Tools from "../comp/Tools";
 import NavigationBar from "../comp/NavigationBar";
-import {forwardRef} from "react";
 import AboutMe from "../comp/AboutMe";
-
+import React from "react";
 function App() {
-    const skillsref = forwardRef(() => (<Skills/>));
     return (
         <div>
-            <NavigationBar/>
-            <Intro scrollableref={skillsref}/>
+            <NavigationBar />
+            <Intro />
             <Skills/>
             <Projects/>
             <Tools/>
