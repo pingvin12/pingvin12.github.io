@@ -1,17 +1,12 @@
-import { FC, useRef } from "react";
-import { skills } from "../misc/constants";
+import {FC} from "react";
+import {skills} from "../misc/constants";
 
-type SkillProperties =
-    {
-        ref : any
-    }
 
-const Skills: FC<SkillProperties> = () => {
+const Skills: FC = () => {
 
     return (
         <div className="lg:min-h-[70vh] px-[5vw] py-[80px] flex flex-col items-center justify-center z-[4]">
             <h1 id={"skills"}
-                data-scroll
                 data-scroll-direction="horizontal"
                 data-scroll-speed="-1"
                 className="text-center text-3xl lg:text-4xl"
@@ -19,7 +14,6 @@ const Skills: FC<SkillProperties> = () => {
                 Skills
             </h1>
             <p
-                data-scroll
                 data-scroll-direction="horizontal"
                 data-scroll-speed="1"
                 className="description text-lg text-center my-[30px]"

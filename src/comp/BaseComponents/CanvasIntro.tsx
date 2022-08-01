@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 
 const Sketch = dynamic(
     () => import("react-p5"),
-    { ssr: false }
+    {ssr: false}
 )
 
 const CanvasIntro: React.FC = () => {
@@ -39,8 +39,7 @@ const CanvasIntro: React.FC = () => {
     };
 
 
-
-    return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
+    return <Sketch setup={setup} draw={draw} windowResized={windowResized}/>;
 };
 
 export default CanvasIntro;

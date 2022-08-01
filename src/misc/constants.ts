@@ -1,4 +1,3 @@
-
 export const social = [
     {
         title: "Github",
@@ -6,8 +5,8 @@ export const social = [
         link: "https://github.com/pingvin12"
     },
     {
-        title:"LinkedIn",
-        icon:"/linkedin.png",
+        title: "LinkedIn",
+        icon: "/linkedin.png",
         link: "https://www.linkedin.com/in/jozsef-f-6bb72118b/",
     }
 ]
@@ -33,8 +32,8 @@ export const skills = [
         image: "/cpp.png",
     },
     {
-      name: "OpenGL",
-      score: 78,
+        name: "OpenGL",
+        score: 78,
         image: "/opengl.png",
     },
     {

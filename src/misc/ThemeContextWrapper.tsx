@@ -1,7 +1,7 @@
-import { useState, useEffect, FC, ReactNode } from 'react'
+import {FC, ReactNode, useEffect, useState} from 'react'
 import ThemeContext from './ThemeContext'
 
-const ThemeContextWrapper: FC<{ children: ReactNode }> = ({ children }) => {
+const ThemeContextWrapper: FC<{ children: ReactNode }> = ({children}) => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
 
     const changeCurrentTheme = (newTheme: 'light' | 'dark') => {
@@ -14,7 +14,7 @@ const ThemeContextWrapper: FC<{ children: ReactNode }> = ({ children }) => {
         else document.body.classList.add('dark')
     }, [theme])
 
-    return <ThemeContext.Provider value={{ currentTheme: theme, changeCurrentTheme }}>{children}</ThemeContext.Provider>
+    return <ThemeContext.Provider value={{currentTheme: theme, changeCurrentTheme}}>{children}</ThemeContext.Provider>
 }
 
 export default ThemeContextWrapper

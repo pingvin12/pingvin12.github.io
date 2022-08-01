@@ -1,5 +1,5 @@
-import { FC } from "react";
-import { social } from "../misc/constants";
+import {FC} from "react";
+import {social} from "../misc/constants";
 
 const Contact: FC = () => {
     return (
@@ -8,7 +8,6 @@ const Contact: FC = () => {
                 Contact
             </h1>
             <div
-                data-scroll
                 data-scroll-speed="1"
                 className="flex justify-center mx-[5vw] mt-8"
             >
@@ -41,7 +40,8 @@ const Contact: FC = () => {
                                 name="subject"
                                 required
                             />
-                            <button className="mt-2 py-2 rounded transition duration-300 flex justify-center items-center gap-[10px] bg-[#e9ebf0] hover:bg-[#d7d8db]">
+                            <button
+                                className="dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700 mt-2 py-2 rounded transition duration-300 flex justify-center items-center gap-[10px] bg-[#e9ebf0] hover:bg-[#d7d8db]">
                                 Send
                             </button>
                         </form>

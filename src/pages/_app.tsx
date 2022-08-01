@@ -5,39 +5,38 @@ import Script from "next/script";
 import {AppProps} from "next/app";
 
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({Component, pageProps}: AppProps) {
     return (
         <>
             <Head>
                 <link
                     rel="shortcut icon"
-                    href="/rounded-avatar.png"
                     type="image/x-icon"
                 />
 
                 <title>{`József Fényes's Portfolio`}</title>
 
-                <meta name="title" content="József Fényes's Portfolio" />
-                <meta name="description" content="József Fényes's Portfolio" />
+                <meta name="title" content="József Fényes's Portfolio"/>
+                <meta name="description" content="József Fényes's Portfolio"/>
 
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="József Fényes's Portfolio" />
+                <meta property="og:type" content="website"/>
+                <meta property="og:title" content="József Fényes's Portfolio"/>
                 <meta
                     property="og:description"
                     content="József Fényes's Portfolio"
                 />
-                <meta property="og:image" content="/avatar.jpg" />
+                <meta property="og:image" content="/avatar.jpg"/>
 
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="József Fényes's Portfolio" />
+                <meta property="twitter:card" content="summary_large_image"/>
+                <meta property="twitter:title" content="József Fényes's Portfolio"/>
                 <meta
                     property="twitter:description"
                     content="József Fényes's Portfolio"
                 />
-                <meta property="twitter:image" content="/avatar.jpg" />
+                <meta property="twitter:image" content="/avatar.jpg"/>
             </Head>
 
-                <Component {...pageProps} />
+            <Component {...pageProps} />
 
             <Script
                 strategy="lazyOnload"
