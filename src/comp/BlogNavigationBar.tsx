@@ -2,7 +2,7 @@ import {FC} from "react";
 import NavigationLink from "./BaseComponents/NavigationLink";
 import ThemeToggleSwitch from "./BaseComponents/ThemeToggleSwitch";
 
-const NavigationBar: FC = () => {
+const BlogNavigationBar: FC = () => {
     return (
         <nav
             className="transition ease-in-out opacity-50 hover:opacity-100 sticky top-0 z-50 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-dark">
@@ -21,12 +21,8 @@ const NavigationBar: FC = () => {
                 </button>
                 <div className="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
                     <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                        <NavigationLink title={"Skills"} href={"#skills"} id={""}/>
-                        <NavigationLink title={"Projects"} href={"#projects"} id={""}/>
-                        <NavigationLink title={"Tools or Algorithms"} href={"#tools"} id={""}/>
-                        <NavigationLink title={"About Me"} href={"#aboutme"} id={""}/>
-                        <NavigationLink title={"Contact"} href={"#contact"} id={""}/>
-                        <NavigationLink title={"Blog"} href={'/blog'} id={""}/>
+                        <NavigationLink title={"Home"} href={"#home"} id={""}/>
+                        <NavigationLink title={"My Portfolio"} href={'/'} id={""}/>
                         <ThemeToggleSwitch/>
                     </ul>
                 </div>
@@ -35,4 +31,4 @@ const NavigationBar: FC = () => {
     );
 };
 
-export default NavigationBar;
+export default BlogNavigationBar;

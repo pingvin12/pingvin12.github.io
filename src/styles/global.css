@@ -29,5 +29,5 @@ h1 {
 
 
 input {
-    @apply dark:text-white bg-blend-lighten border-gray-500 rounded outline-none px-3 py-2 focus:border-gray-700 focus:shadow-[0_0_0_4px_#027DFF80] transition duration-300;
+    @apply text-black bg-blend-lighten border-gray-500 rounded outline-none px-3 py-2 focus:border-gray-700 focus:shadow-[0_0_0_4px_#027DFF80] transition duration-300;
 }

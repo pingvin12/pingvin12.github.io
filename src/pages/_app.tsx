@@ -25,7 +25,7 @@ function MyApp({Component, pageProps}: AppProps) {
                     property="og:description"
                     content="József Fényes's Portfolio"
                 />
-                <meta property="og:image" content="/avatar.jpg"/>
+                <meta property="og:image" content="/avatar.png"/>
 
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:title" content="József Fényes's Portfolio"/>
@@ -33,7 +33,7 @@ function MyApp({Component, pageProps}: AppProps) {
                     property="twitter:description"
                     content="József Fényes's Portfolio"
                 />
-                <meta property="twitter:image" content="/avatar.jpg"/>
+                <meta property="twitter:image" content="/avatar.png"/>
             </Head>
 
             <Component {...pageProps} />
