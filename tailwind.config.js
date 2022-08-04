@@ -1,7 +1,7 @@
 module.exports = {
     content: ["./src/**/*.{js,ts,jsx,tsx}"],
+    darkMode: "class",
     theme: {
-        darkMode: "class",
         fontFamily: {
           'display':['"Ubuntu"', '"Roboto Slab"'],
           'body':['"Open Sans"', '"Helvetica"']  ,
