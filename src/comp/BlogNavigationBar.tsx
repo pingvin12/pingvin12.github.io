@@ -2,13 +2,23 @@ import {FC} from "react";
 import NavigationLink from "./BaseComponents/NavigationLink";
 import ThemeToggleSwitch from "./BaseComponents/ThemeToggleSwitch";
 
+const setVisibility = () => {
+    let val = document.getElementById('navbar-solid-bg')?.classList.contains('hidden')
+    if (Boolean(val)) {
+        document.getElementById('navbar-solid-bg')?.classList.remove('hidden')
+    } else {
+        document.getElementById('navbar-solid-bg')?.classList.add('hidden')
+    }
+}
+
+
 const BlogNavigationBar: FC = () => {
     return (
         <nav
             className="transition ease-in-out opacity-50 hover:opacity-100 sticky top-0 z-50 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-dark">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
 
-                <button data-collapse-toggle="navbar-solid-bg" type="button"
+                <button data-collapse-toggle="navbar-solid-bg" type="button" onClick={() => setVisibility()}
                         className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         aria-controls="navbar-solid-bg" aria-expanded="false">
                     <span className="sr-only">Open main menu</span>
