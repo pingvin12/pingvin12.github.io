@@ -31,7 +31,7 @@ const BlogNavigationBar: FC = () => {
                 </button>
                 <div className="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
                     <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                        <NavigationLink title={"Home"} href={"#home"} id={""}/>
+                        <NavigationLink title={"Home"} href={"/blog"} id={""}/>
                         <NavigationLink title={"My Portfolio"} href={'/'} id={""}/>
                         <ThemeToggleSwitch/>
                     </ul>

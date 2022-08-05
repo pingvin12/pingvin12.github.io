@@ -18,7 +18,7 @@ const Tools: FC = () => {
                 >
                     <div data-scroll-speed="3" className="lg:flex-1">
                         <div className="border-[#888] border-2 rounded-[20px] overflow-hidden">
-                            <div className="border-black border-[8px]">
+                            <div className="dark:border-black border-[8px]">
                                 <img
                                     className="w-full rounded-[12px]"
                                     src={item.banner}

@@ -9,11 +9,15 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.45",
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^16.11.47",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "deploy": "^1.0.3",
     "framer-motion": "^6.5.1",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^13.0.1",
     "next": "^12.2.3",
     "next-bundle-analyzer": "^0.6.4",
     "p5": "^1.4.2",
@@ -42,6 +46,11 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   },
   "browserslist": {
     "production": [

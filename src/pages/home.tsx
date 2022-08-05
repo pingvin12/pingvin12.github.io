@@ -6,6 +6,7 @@ import Tools from "../comp/Tools";
 import AboutMe from "../comp/AboutMe";
 import Contact from "../comp/Contact";
 import React from "react";
+import Footer from "../comp/BaseComponents/Footer";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <Tools/>
             <AboutMe/>
             <Contact/>
+            <Footer/>
         </div>
     )
 }

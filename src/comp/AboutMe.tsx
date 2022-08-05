@@ -17,7 +17,7 @@ const AboutMe: FC = () => {
                     <div data-scroll-speed="3" className="md:flex-1">
                         <div className="  overflow-hidden scale-100">
                             <img
-                                className="transition ease-in-out delay-150 w-full rounded-[100px] scale-50 duration-300"
+                                className="transition ease-in-out delay-150 w-full rounded-[100px] scale-50 duration-300 drop-shadow-2xl"
                                 src={item.profpic}
                                 alt=""
                             />
