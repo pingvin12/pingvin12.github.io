@@ -1,4 +1,4 @@
-import { FC} from "react";
+import {FC} from "react";
 import {skills} from "../misc/constants";
 
 const Skills: FC = () => {
