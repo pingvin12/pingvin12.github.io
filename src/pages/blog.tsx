@@ -23,13 +23,13 @@ export async function getStaticProps() {
     };
 }
 
-export default function Blog({ posts }) {
+export default function Blog({ posts } : {posts : any}) {
     return (
         <div>
             <BlogNavigationBar/>
             <BlogLayout>
                 <div className='grid grid-cols-1 md:grid-cols-3 drop-shadow-md lg:grid-cols-4 p-4 md:p-0'>
-                    {posts.map(({ slug, front }) => (
+                    {posts.map(({ slug, front } : {slug: any, front: any}) => (
                         <div
                             key={slug}
                             className='border dark:border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col'

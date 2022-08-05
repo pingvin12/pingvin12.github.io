@@ -18,7 +18,8 @@ export async function getStaticPaths() {
     };
 }
 
-export async function getStaticProps({ params: { slug } }) {
+// @ts-ignore
+export async function getStaticProps({ params: { slug }}) {
     const fileName = fs.readFileSync(`src/posts/${slug}.md`, 'utf-8');
     const { data: front, content } = matter(fileName);
     return {
@@ -29,7 +30,7 @@ export async function getStaticProps({ params: { slug } }) {
     };
 }
 
-export default function PostPage({ front, content }) {
+export default function PostPage({ front, content } : {front: any, content: any}) {
     return (
         <>
             <BlogNavigationBar />
@@ -41,7 +42,7 @@ export default function PostPage({ front, content }) {
 
                     <br/>
                     <p>Discover more</p>
-                    {front.tags.map((tag) => (
+                    {front.tags.map((tag : any) => (
                         <a className='dark:bg-darklight drop-shadow-md dark:text-white text-black dark:hover:bg-gray-800 bg-gray-50 hover:bg-gray-200 transition-colors block p-2 mr-2 mb-2  text-sm rounded-xl font-medium'>#{tag}</a>
                     ))}
                 </div>
