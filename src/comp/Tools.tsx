@@ -17,14 +17,14 @@ const Tools: FC = () => {
                     }`}
                 >
                     <div data-scroll-speed="3" className="lg:flex-1">
-                        <div className="border-[#888] border-2 rounded-[20px] overflow-hidden">
-                            <div className="dark:border-black border-[8px]">
+                        <div className="border-transparent border-2 rounded-[20px] overflow-hidden drop-shadow-2xl">
+
                                 <img
-                                    className="w-full rounded-[12px]"
+                                    className="w-full"
                                     src={item.banner}
                                     alt=""
                                 />
-                            </div>
+
                         </div>
                     </div>
                     <div className="item-info lg:flex-1">

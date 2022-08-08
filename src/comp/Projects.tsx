@@ -17,14 +17,12 @@ const Projects: FC = () => {
                     }`}
                 >
                     <div data-scroll-speed="3" className="lg:flex-1">
-                        <div className="border-[#888] border-2 rounded-[20px] overflow-hidden">
-                            <div className="dark:border-black border-[8px]">
+                        <div className="border-transparent border-2 rounded-[20px] overflow-hidden drop-shadow-2xl">
                                 <img
-                                    className="transition ease-in-out delay-150 w-full rounded-[5px] hover:scale-125 duration-300"
+                                    className="w-full"
                                     src={item.banner}
                                     alt=""
                                 />
-                            </div>
                         </div>
                     </div>
                     <div className="item-info lg:flex-1">
