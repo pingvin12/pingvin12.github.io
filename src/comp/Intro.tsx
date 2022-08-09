@@ -1,11 +1,14 @@
 import React from "react";
-import CanvasIntro from "./BaseComponents/CanvasIntro";
 
 class Intro extends React.Component {
     render() {
         return (
-            <div className="relative h-screen flex justify-center items-center flex-col gap-5">
-                <CanvasIntro/>
+            <div className="relative h-screen flex justify-center items-center flex-col gap-5 ">
+                <div className="flex h-1/2 w-full mx-auto justify-center bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">
+                <h1 className="p-20 w-full text-5xl font-bold">Hey, I'm József Fényes <br/><br/>
+                    <h1 id='occupation'>I mainly do programming</h1></h1>
+
+                </div>
                 <svg onClick={(() => scrollBy(0, 1000))} xmlns="http://www.w3.org/2000/svg"
                      className="transition ease-in-out hover:scale-125 w-6 text-black dark:text-white" fill="none"
                      viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
