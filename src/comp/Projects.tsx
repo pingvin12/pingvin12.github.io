@@ -18,11 +18,11 @@ const Projects: FC = () => {
                 >
                     <div data-scroll-speed="3" className="lg:flex-1">
                         <div className="border-transparent border-2 rounded-[20px] overflow-hidden drop-shadow-2xl">
-                                <img
-                                    className="w-full"
-                                    src={item.banner}
-                                    alt=""
-                                />
+                            <img
+                                className="w-full"
+                                src={item.banner}
+                                alt=""
+                            />
                         </div>
                     </div>
                     <div className="item-info lg:flex-1">

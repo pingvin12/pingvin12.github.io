@@ -60,8 +60,8 @@ export const about =
     [
         {
             name: "József Fényes",
-            desc: "Hey, I'm József. "+
-            "I am a software engineer\nwho is curious about low-level code and whatnot.",
+            desc: "Hey, I'm József. " +
+                "I am a software engineer\nwho is curious about low-level code and whatnot.",
             profpic: "/profpic.png"
         }
     ]

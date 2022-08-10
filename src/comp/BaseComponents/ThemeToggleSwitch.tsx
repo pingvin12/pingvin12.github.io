@@ -22,4 +22,5 @@ class ThemeToggleSwitch extends React.Component {
         );
     }
 }
+
 export default ThemeToggleSwitch;

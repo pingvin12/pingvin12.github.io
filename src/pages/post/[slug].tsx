@@ -19,9 +19,9 @@ export async function getStaticPaths() {
 }
 
 // @ts-ignore
-export async function getStaticProps({ params: { slug }}) {
+export async function getStaticProps({params: {slug}}) {
     const fileName = fs.readFileSync(`src/posts/${slug}.md`, 'utf-8');
-    const { data: front, content } = matter(fileName);
+    const {data: front, content} = matter(fileName);
     return {
         props: {
             front,
@@ -30,19 +30,19 @@ export async function getStaticProps({ params: { slug }}) {
     };
 }
 
-export default function PostPage({ front, content } : {front: any, content: any}) {
+export default function PostPage({front, content}: { front: any, content: any }) {
     return (
         <>
-            <BlogNavigationBar />
+            <BlogNavigationBar/>
             <div className='flex items-stretch '>
 
                 <div className='prose mx-auto place-self-auto py-12 self-center self-stretch'>
                     <h1 className='text-7xl'>{front.title}</h1>
-                    <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+                    <div dangerouslySetInnerHTML={{__html: md().render(content)}}/>
 
                     <br/>
                     <p>Discover more</p>
-                    {front.tags.map((tag : any) => (
+                    {front.tags.map((tag: any) => (
                         <a className='dark:bg-darklight drop-shadow-md dark:text-white text-black dark:hover:bg-gray-800 bg-gray-50 hover:bg-gray-200 transition-colors block p-2 mr-2 mb-2  text-sm rounded-xl font-medium'>#{tag}</a>
                     ))}
                 </div>
