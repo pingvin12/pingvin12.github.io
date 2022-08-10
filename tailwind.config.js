@@ -3,8 +3,8 @@ module.exports = {
     darkMode: "class",
     theme: {
         fontFamily: {
-         'bahnschrift': ['Bahnschrift'],
-            'helvetica': ['Helvetica'],
+         'bahnschrift': ['Bahnschrift', 'sans-serif'],
+            'helvetica': ['Helvetica', 'sans-serif'],
             'century_gothic': ['Century_Gothic']
         },
         extend: {
