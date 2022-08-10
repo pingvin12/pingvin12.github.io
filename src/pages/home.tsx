@@ -5,7 +5,6 @@ import Projects from "../comp/Projects";
 import Tools from "../comp/Tools";
 import AboutMe from "../comp/AboutMe";
 import Contact from "../comp/Contact";
-import React from "react";
 import Footer from "../comp/BaseComponents/Footer";
 
 export default function Home() {

@@ -18,7 +18,7 @@ function MyApp({Component, pageProps}: AppProps) {
 
                 <meta name="title" content="József Fényes's Portfolio"/>
                 <meta name="description" content="József Fényes's Portfolio"/>
-
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:title" content="József Fényes's Portfolio"/>
                 <meta
