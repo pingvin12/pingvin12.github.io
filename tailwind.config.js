@@ -3,8 +3,9 @@ module.exports = {
     darkMode: "class",
     theme: {
         fontFamily: {
-          'display':['"Ubuntu"', '"Roboto Slab"'],
-          'body':['"Open Sans"', '"Helvetica"']  ,
+         'bahnschrift': ['Bahnschrift'],
+            'helvetica': ['Helvetica'],
+            'century_gothic': ['Century_Gothic']
         },
         extend: {
             colors: {
