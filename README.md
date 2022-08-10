@@ -1,4 +1,4 @@
-# My Personal Portfolio
+# My Personal Portfolio ![workflow](https://github.com/pingvin12/pingvin12.github.io/actions/workflows/workflow.yml/badge.svg)
 NextJS Portfolio for personal use, this simple portfolio website is built with nextjs and tailwind css. This is static website uses gray-matter for converting markdown to html for the blog.
 
 ## Libraries
