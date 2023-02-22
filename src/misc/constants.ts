@@ -67,10 +67,10 @@ export const about =
     ]
 export const projects = [
     {
-        title: "UNDERCOVER",
-        desc: "An FPS made in Unity3D.",
-        banner: "/undercover.png",
-        git: "https://github.com/pingvin12/UnderCover",
+        title: "Evently",
+        desc: "An application made for event management.",
+        banner: "/evently.png",
+        git: "https://github.com/pingvin12/Evently",
     },
     {
         title: "3DViewr",
@@ -79,9 +79,9 @@ export const projects = [
         git: "https://github.com/pingvin12/3DViewr",
     },
     {
-        title: "3DViewr-frontend",
-        desc: "Frontend part of 3DViewr made using the tauri frontend framework.",
+        title: "1Pass",
+        desc: "A secret manager using tauri and rust",
         banner: "none",
-        git: "https://github.com/pingvin12/3DViewr-Frontend",
+        git: "https://github.com/pingvin12/1Pass",
     },
 ]
