@@ -37,7 +37,6 @@ export default function Blog({posts}: { posts: any }) {
                             <Link href={`/post/${slug}`}>
                                 <div>
                                     <h1 className='p-4'>{front.title}</h1>
-                                    <img className='p-4' src={front.socialImage} alt={'bannerimg-' + front.title}/>
                                     <p className='text-sm p-4'>Date: {front.date}</p>
                                     <div>{ front.tags.map((tag: any) => (
                                             <a className='dark:bg-darklight drop-shadow-md dark:text-white text-black dark:hover:bg-gray-800 bg-gray-50 hover:bg-gray-200 transition-colors block p-2 mr-2 mb-2  text-sm rounded-xl font-medium'>#{tag}</a>
