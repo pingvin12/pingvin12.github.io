@@ -27,24 +27,14 @@ export const skills = [
         image: "/rust.png",
     },
     {
-        name: "C++",
+        name: "Typescript",
         score: 85,
-        image: "/cpp.png",
-    },
-    {
-        name: "OpenGL",
-        score: 78,
-        image: "/opengl.png",
+        image: "/typescript.png",
     },
     {
         name: "Node.js",
         score: 78,
         image: "/nodejs.png",
-    },
-    {
-        name: "SQL",
-        score: 78,
-        image: "/sql.png",
     },
 ]
 export const tools = [
