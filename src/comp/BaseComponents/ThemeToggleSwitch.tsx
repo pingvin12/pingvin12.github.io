@@ -1,5 +1,4 @@
 import React from "react";
-import { instanceOf } from 'prop-types';
 import { useCookies, Cookies } from 'react-cookie';
 import { useEffect } from "react";
 function ThemeToggleSwitch() {
