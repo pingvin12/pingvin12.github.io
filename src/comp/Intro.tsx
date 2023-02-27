@@ -25,7 +25,7 @@ const Intro = () => {
                 <div
                     className="h-screen w-full mx-auto justify-center dark:bg-black bg-gradient-to-r from-orange-400 to-amber-200 dark:from-pink-500 dark:to-yellow-500 background-animate grid gap-4">
                     <div className=" w-full h-full">
-                        <h1 className="h-20 w-full text-[90px] font-bold">I Build<br/> <a className=" bg-yellow-300 dark:bg-orange-400">Scalable<br/> APIs & Web-<br/>Applications</a></h1>
+                        <h1 className="h-20 w-full text-[60px] font-bold">I Build<br/> <a className=" bg-yellow-300 dark:bg-orange-400">Scalable<br/> APIs & Web-<br/>Applications</a></h1>
                     </div>
                 </div>
                 <svg onClick={(() => scrollBy(0, 1000))} xmlns="http://www.w3.org/2000/svg"

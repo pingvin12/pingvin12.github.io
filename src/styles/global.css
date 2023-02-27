@@ -27,6 +27,12 @@ h1 {
     @apply dark:text-white md:font-extrabold dark:text-white text-black font-bahnschrift;
 }
 
+#__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
 .background-animate {
     background-size: 400%;
 
