@@ -1,17 +1,17 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import TextTransition, {presets} from "react-text-transition";
 
 const PROFESSIONS = [
-    "Programming",
-    "Fullstack",
-    "Coding",
+    "C#",
+    "Rust",
+    "Typescript",
 ];
 
 
 const Intro = () => {
-    const [index, setIndex] = React.useState(0);
+    const [index, setIndex] = useState(0);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const intervalId = setInterval(() =>
                 setIndex(index => index + 1),
             3000 // every 3 seconds
@@ -23,15 +23,9 @@ const Intro = () => {
         <>
             <div className="relative h-screen flex justify-center items-center flex-col gap-5 ">
                 <div
-                    className="flex justify-start h-screen w-full mx-auto justify-center bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 grid grid-rows-2 gap-4">
-                    <div className="row-span-1">
-                        <h1 className="p-20 h-20 w-full text-5xl font-bold">Hey, I'm József Fényes</h1>
-                    </div>
-                    <div className="row-span-2">
-                        <h1 className='p-20 h-20 w-full text-5xl font-bold'>I mainly do</h1>
-                        <TextTransition className='mx-20 w-full text-5xl font-bold dark:text-white text-black' springConfig={presets.gentle}>
-                            {PROFESSIONS[index % PROFESSIONS.length]}
-                        </TextTransition>
+                    className="h-screen w-full mx-auto justify-center dark:bg-black bg-gradient-to-r from-orange-400 to-amber-200 dark:from-pink-500 dark:to-yellow-500 background-animate grid gap-4">
+                    <div className=" w-full h-full">
+                        <h1 className="h-20 w-full text-[90px] font-bold">I Build<br/> <a className=" bg-yellow-300 dark:bg-orange-400">Scalable<br/> APIs & Web-<br/>Applications</a></h1>
                     </div>
                 </div>
                 <svg onClick={(() => scrollBy(0, 1000))} xmlns="http://www.w3.org/2000/svg"
