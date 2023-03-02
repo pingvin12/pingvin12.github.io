@@ -30,6 +30,8 @@ const Skills: FC = () => {
                             className="w-[60px] h-[60px] transition duration-300 group-hover:scale-110 dark:invert"
                             src={skill.image}
                             alt=""
+                            width={512}
+                            height={512}
                         />
                         <p className="text-center">{skill.name}</p>
                     </a>

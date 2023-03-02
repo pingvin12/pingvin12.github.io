@@ -22,6 +22,8 @@ const Projects: FC = () => {
                                 className="w-full"
                                 src={item.banner}
                                 alt=""
+                                width={item.width}
+                                height={item.height}
                             />
                         </div>
                     </div>

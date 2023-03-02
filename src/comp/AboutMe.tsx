@@ -20,6 +20,8 @@ const AboutMe: FC = () => {
                                 className="transition ease-in-out delay-150 max-w-[500px] rounded-[100px] scale-100 duration-300 drop-shadow-2xl"
                                 src={item.profpic}
                                 alt=""
+                                width={item.width}
+                                height={item.height}
                             />
 
                         </div>
