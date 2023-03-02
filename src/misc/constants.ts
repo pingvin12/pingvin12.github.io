@@ -43,6 +43,8 @@ export const tools = [
         desc: "A Genetic algorithm solution made with python.",
         banner: "/genalg.png",
         git: "https://github.com/pingvin12/Genalg",
+        width: 683,
+        height: 236
     }
 ]
 
@@ -52,7 +54,9 @@ export const about =
             name: "József Fényes",
             desc: "Hey, I'm József. " +
                 "Dedicated individual with a passion for learning and is constantly striving to improve his skills.",
-            profpic: "/profpic.png"
+            profpic: "/profpic.png",
+            width: 0,
+            height: 0
         }
     ]
 export const projects = [
@@ -61,17 +65,23 @@ export const projects = [
         desc: "An application made for event management.",
         banner: "/evently.png",
         git: "https://github.com/pingvin12/Evently",
+        width: 1245,
+        height: 843
     },
     {
         title: "3DViewr",
         desc: "A full-scale desktop application for 3D modelling.",
         banner: "none",
         git: "https://github.com/pingvin12/3DViewr",
+        width: 0,
+        height: 0
     },
     {
         title: "1Pass",
         desc: "A secret manager using tauri and rust",
         banner: "none",
         git: "https://github.com/pingvin12/1Pass",
+        width: 0,
+        height: 0
     },
 ]
