@@ -1,10 +1,11 @@
 import {FC} from "react";
 import {about} from "../misc/constants";
+import AboutCard from "./BaseComponents/AboutCard";
+import TinyAboutCard from "./BaseComponents/TinyAboutCard";
 
 const AboutMe: FC = () => {
     return (
         <>
-            <h1 className="text-center text-4xl mb-10 md:mb-20" id="aboutme">About</h1>
             {about.map((item, index) => (
                 <div
                     key={item.name}
@@ -31,8 +32,30 @@ const AboutMe: FC = () => {
                         <p className="text-[20px] text-justify my-3">
                             {item.desc}
                         </p>
+                        <div className="flex gap-[20px]">
+                        {
+                            item.achivements.map((item, index) => (
+                                <TinyAboutCard key={index} title={item.title} description={item.description}/>
+                            ))
+                        }
+                        </div>
 
-
+                    </div>
+                    <div className="item-whatido flex lg:gap-[20px] sm:gap-5 md:gap-10 items-center">
+                        <div className="item-info w-1/2">
+                       {
+                            item.whatido.map((item, index) => (
+                                <AboutCard key={index} title={item.title} description={item.description}/>
+                            ))
+                       }
+                       </div>
+                       <div className="w-1/2">
+                       {
+                            item.experience.map((item, index) => (
+                                <AboutCard key={index} title={item.title} description={item.description}/>
+                            ))
+                       }
+                       </div>
                     </div>
                 </div>
             ))}

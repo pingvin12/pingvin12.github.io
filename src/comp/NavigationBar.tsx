@@ -31,9 +31,7 @@ const NavigationBar: FC = () => {
                 </button>
                 <div className="hidden w-full md:flex md:w-auto" id="navbar-solid-bg">
                     <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                        <NavigationLink title={"Skills"} href={"#skills"} id={""}/>
                         <NavigationLink title={"Projects"} href={"#projects"} id={""}/>
-                        <NavigationLink title={"Tools or Algorithms"} href={"#tools"} id={""}/>
                         <NavigationLink title={"Blog"} href={'/blog'} id={""}/>
                         <ThemeToggleSwitch/>
                     </ul>

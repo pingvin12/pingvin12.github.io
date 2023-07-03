@@ -40,7 +40,7 @@ const Projects: FC = () => {
                                 href={item.git}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="h-[45px] px-[15px] text-white rounded transition duration-300 flex items-center gap-[10px] bg-[#1b222b] hover:bg-[#191e25]"
+                                className="h-[45px] px-[15px] text-white rounded transition duration-300 flex items-center gap-[10px] bg-[#1b222b] hover:bg-[#191e25] dark:bg-white dark:text-black"
                             >
                                 <FaGithub size={25}/>
                                 <span> View on Github</span>
