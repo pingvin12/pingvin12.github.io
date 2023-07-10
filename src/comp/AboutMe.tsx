@@ -41,15 +41,15 @@ const AboutMe: FC = () => {
                         </div>
 
                     </div>
-                    <div className="item-whatido flex lg:gap-[20px] sm:gap-5 md:gap-10 items-center">
-                        <div className="item-info w-1/2">
+                    <div className="item-whatido grid gap-4 sm:grid-flow-col">
+                        <div>
                        {
                             item.whatido.map((item, index) => (
                                 <AboutCard key={index} title={item.title} description={item.description}/>
                             ))
                        }
                        </div>
-                       <div className="w-1/2">
+                       <div>
                        {
                             item.experience.map((item, index) => (
                                 <AboutCard key={index} title={item.title} description={item.description}/>
